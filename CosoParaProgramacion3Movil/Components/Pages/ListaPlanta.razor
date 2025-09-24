@@ -57,7 +57,7 @@
 
 
 @code {
-    List<Planta> listaPlanta = new List<Planta>();
+    List<Plantas> listaPlanta = new List<Plantas>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -69,12 +69,12 @@
         navigationManager.NavigateTo("/");
     }
 
-    private void EditarPlanta(Planta planta)
+    private void EditarPlanta(Plantas planta)
     {
         navigationManager.NavigateTo($"/planta/{planta.Id}");
     }
 
-    private void BorrarPlanta(Planta planta)
+    private void BorrarPlanta(Plantas planta)
     {
         @if (!sesionService.EstaAutenticado)
         {

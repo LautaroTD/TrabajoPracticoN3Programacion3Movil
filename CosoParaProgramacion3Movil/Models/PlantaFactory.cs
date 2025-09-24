@@ -2,9 +2,9 @@ namespace CosoParaProgramacion3Movil.Models;
 
 public static class PlantaFactory
 {
-    public static Planta CrearPlantaGenerica()
+    public static Plantas CrearPlantaGenerica()
     {
-        return new Planta
+        return new Plantas
         {
             Imagen = "img/generico.jpg",
             Informacion = new DescripcionPlanta
@@ -82,7 +82,7 @@ public static class PlantaFactory
     }
 
     // Método adicional si quisieras crear una planta personalizada
-    public static Planta CrearPlantaConNombre(string nombreCientifico)
+    public static Plantas CrearPlantaConNombre(string nombreCientifico)
     {
         var planta = CrearPlantaGenerica();
         planta.Informacion.NombreCientifico = nombreCientifico;
